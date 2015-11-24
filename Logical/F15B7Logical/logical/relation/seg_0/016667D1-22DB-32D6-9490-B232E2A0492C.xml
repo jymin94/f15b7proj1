@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="F15B7 Emp F15B7 Auth FK" directorySegmentName="seg_0" id="016667D1-22DB-32D6-9490-B232E2A0492C">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:43:59 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<sourcePk>120329BD-E6F0-2F68-37B5-2BC7F8D2BD24</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FB125227-E995-05F1-8C89-9B0A59E33349</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9E86910-2719-35BE-49FD-DF8FEECFC39F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB00DBE3-E81F-CBAF-AD00-925BCC666CFC" name="F15B7_RFE">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:37:38 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="24486000-C609-5C46-5D68-62C779CADC00">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:37:46 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="836F481C-613F-1E1A-B8CD-1C87DC92ED6E">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:37:59 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_prot" id="77502554-8563-6813-C0EF-178E31E14EB1">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:38:11 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="appr_date" id="F812D64A-53B4-6BA7-E8E0-F36601E5CB9B">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:38:23 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="CA4B3F53-1935-97D3-0EA5-2CEEAF0F7B08">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:44:26 UTC</createdTime>
+<generatorID>4D99D4C5-E3E5-DF0D-21B7-DD6FA1520462</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<referedAttribute>FA541D62-E82A-1957-08C5-69E238392369</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="A4790E40-2C94-F496-948F-572F8909938C">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:09:47 UTC</createdTime>
+<generatorID>B5AD6712-B81A-9570-A072-CDAF36F1E73D</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<referedAttribute>98A81C17-DB0A-BF4D-3FC6-3A25A0624522</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff_date" id="7E7C6F45-2602-18B4-160E-637ED6C82A7B">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:42:58 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7433C46F-B7FF-0E6B-23CB-55778EFA2CD8" name="F15B7_RFE_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 22:37:52 UTC</createdTime>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="62EC8201-3870-2316-106A-27A5DDBE3669" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>24486000-C609-5C46-5D68-62C779CADC00</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

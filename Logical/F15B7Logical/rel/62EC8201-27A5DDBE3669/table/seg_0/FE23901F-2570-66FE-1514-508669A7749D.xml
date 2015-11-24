@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE23901F-2570-66FE-1514-508669A7749D" name="F15B7_RFE">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>EB00DBE3-E81F-CBAF-AD00-925BCC666CFC</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="A3305070-1E12-B936-B088-3EEDD0F0AA96">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>24486000-C609-5C46-5D68-62C779CADC00</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B7FBE29C-51D6-4BA2-EFD7-FE513A39602A">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>836F481C-613F-1E1A-B8CD-1C87DC92ED6E</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_prot" id="8AB24F36-DE0E-51D3-3B3C-9D500C86DF66">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>77502554-8563-6813-C0EF-178E31E14EB1</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="appr_date" id="72A6458F-8C2C-6B58-C3EA-A216D8C49A24">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>F812D64A-53B4-6BA7-E8E0-F36601E5CB9B</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B7_Emp_emp_id" id="48D9ECDA-082C-CA0C-E5FB-62C7367E2B69">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>CA4B3F53-1935-97D3-0EA5-2CEEAF0F7B08</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DF4A5E2-88C5-4A6A-A2F8-1CCE33DEDCCF" referredColumn="B4D6B1E4-C4A2-47A9-303E-20128174CFE9"/>
+</associations>
+</Column>
+<Column name="F15B7_Status_status_id" id="4770D3E3-FAA4-C3E8-32BE-73E6D7D64491">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>A4790E40-2C94-F496-948F-572F8909938C</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED963984-2241-ACB7-5B1E-4B5525F3FB03" referredColumn="B72DA521-83FA-2F7C-16E3-846CE43E89DB"/>
+</associations>
+</Column>
+<Column name="eff_date" id="17454D9D-EBD7-F843-F4BC-A2611315C8BC">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:43:16 UTC</createdTime>
+<generatorID>7E7C6F45-2602-18B4-160E-637ED6C82A7B</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FEE3BE8-6152-AD9B-9794-0F274CEF6CCC" name="F15B7_RFE_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>7433C46F-B7FF-0E6B-23CB-55778EFA2CD8</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3305070-1E12-B936-B088-3EEDD0F0AA96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E08B84A-2EDA-5BC9-988A-7355522F5212" name="F15B7_RFE_F15B7_Emp_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>4D99D4C5-E3E5-DF0D-21B7-DD6FA1520462</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48D9ECDA-082C-CA0C-E5FB-62C7367E2B69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C1F18D-0DFE-6C76-0704-7877853EE4E9" name="F15B7_RFE_F15B7_Status_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>B5AD6712-B81A-9570-A072-CDAF36F1E73D</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4770D3E3-FAA4-C3E8-32BE-73E6D7D64491"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

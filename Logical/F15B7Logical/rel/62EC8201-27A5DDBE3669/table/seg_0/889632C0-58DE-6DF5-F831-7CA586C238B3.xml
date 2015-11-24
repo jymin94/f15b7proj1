@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="889632C0-58DE-6DF5-F831-7CA586C238B3" name="F15B7_Tasks">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>FF6BEE29-DEF7-BE42-8663-635DA2670396</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="1A765C27-75DF-7F2E-B508-B7528F138B21">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>2C632D41-FABE-5680-956F-2C796113DEC2</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eff_date" id="E1263A7C-2340-63F0-B896-B83A4D70D5C3">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>BD128CBA-DE27-16B1-41B8-EE9DC902AF76</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbr" id="1597F905-2201-D20A-2DA8-4F68D79139B2">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>C650BD1E-45F6-A083-94F0-34349BAD320D</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="7626625D-8BDE-3921-D301-253FC4D4919C">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>DF892387-B664-909C-8D72-7435AED1913F</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="579F1A74-03B9-D9A6-56E5-4FFA818B1100" name="F15B7_Tasks_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:19:31 UTC</createdTime>
+<generatorID>E3DE563A-2341-ECD5-0C73-843E5F4EAC98</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A765C27-75DF-7F2E-B508-B7528F138B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

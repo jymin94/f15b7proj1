@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D0D21FD-230A-E468-FBB7-AE9A6EAA8455" name="F15B7_Comment">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>52E23786-034E-8E45-B805-7087DD932917</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment_id" id="BE977C8C-81B6-BC15-2D93-08CD3F2B02AF">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>86658FDA-E10A-BA0A-F4BA-4B8B2534F57F</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entry_date" id="82373B85-CAB8-4FDF-F423-74F4EB05DDD6">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>77620B64-C563-2FC2-B67D-947981B60773</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment" id="E8872AF2-4526-CCB8-8462-B7F3BAEE151B">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>F956F586-B831-F3E7-FDE7-672D1FFE9BBA</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B7_RFE_rfe_id" id="3EED9A27-AAF4-8BFD-E637-00BC1E625855">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>E100FA2E-461D-40E6-4A03-AA56F10933F5</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6588277A-CD4A-D224-9A39-59A05C0141C5" referredColumn="A3305070-1E12-B936-B088-3EEDD0F0AA96"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B83ADBB6-19D3-C91C-F7B3-3F51ECB1BFA9" name="F15B7_Comment_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>FB08C5E4-E8BA-AFF0-8FB6-BB88D28D9193</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE977C8C-81B6-BC15-2D93-08CD3F2B02AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="745717F9-167D-9BDA-2124-5A5EBE7EA511" name="F15B7_Comment_F15B7_RFE_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>BC0E126F-3E4E-AFFD-1CD8-D2AF4634373D</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EED9A27-AAF4-8BFD-E637-00BC1E625855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

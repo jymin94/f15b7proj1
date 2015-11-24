@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D33516EA-11A6-16D4-D184-370CCC44A749" name="F15B7_Approvers">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>834E1CC4-6E6F-55BC-587F-51B4C6233C5D</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_emp_id" id="78740222-A43D-F48F-13FE-070FF7CA7CD8">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>58830825-8F46-2A4A-1AAD-84770CAAD8BC</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B7_Emp_emp_id" id="C886C579-74E2-2F64-8419-B428CEDA0CD1">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>2C585789-A01A-6B2D-0DBA-F03AC63D04B1</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52615914-DEE5-5399-0713-5A7FE6725159" referredColumn="B4D6B1E4-C4A2-47A9-303E-20128174CFE9"/>
+</associations>
+</Column>
+<Column name="F15B7_RFE_rfe_id" id="23FBB445-6047-8D1F-F6BC-BC40B243683A">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 23:39:34 UTC</createdTime>
+<generatorID>696119F6-9AE4-E96B-D9CF-90A0D7CFA87E</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B97BD81-961D-0E95-79D5-87CD35ACC7AF" referredColumn="A3305070-1E12-B936-B088-3EEDD0F0AA96"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F19F99BA-5139-35FF-FCBD-AF70FA9EC6B3" name="F15B7_Approvers_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>CB9A4FD0-48BA-E9EF-7137-0EB50518CF3B</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78740222-A43D-F48F-13FE-070FF7CA7CD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3381F72E-66C7-D5A3-B742-EB4AA1D58291" name="F15B7_Approvers_F15B7_Emp_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 08:05:41 UTC</createdTime>
+<generatorID>CC72546F-B425-C7CA-B0BA-8D9F9CA2451E</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C886C579-74E2-2F64-8419-B428CEDA0CD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CB5DF8F-E9E9-F6A5-0B77-923936DB1E19" name="F15B7_Approvers_F15B7_RFE_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 23:39:34 UTC</createdTime>
+<generatorID>317A428D-6CCE-97BD-672B-4136B60C0F47</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23FBB445-6047-8D1F-F6BC-BC40B243683A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

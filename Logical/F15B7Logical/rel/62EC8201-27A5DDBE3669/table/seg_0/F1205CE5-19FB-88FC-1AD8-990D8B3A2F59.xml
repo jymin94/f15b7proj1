@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1205CE5-19FB-88FC-1AD8-990D8B3A2F59" name="F15B7_Task_Rfe">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>68ACF2DD-30C2-7D3E-9E24-341D7BB0E487</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_task_id" id="1EE3B2A9-2252-DEB7-E009-3CF62E2BCCBB">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>3002AC89-06EB-B416-B728-40F096ECEF70</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15B7_Tasks_task_id" id="CCB6EC86-3D90-3DCF-615A-ABBA7470D2DB">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>507DCBAB-7023-FF83-4835-A4909C6ED743</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F145F576-8D1E-0C2A-4992-D21D961428B6" referredColumn="1A765C27-75DF-7F2E-B508-B7528F138B21"/>
+</associations>
+</Column>
+<Column name="F15B7_RFE_rfe_id" id="04919D19-91FB-C444-F986-9ADC75689CF2">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>CA34C219-F641-EFC4-C554-B1DCE95AD763</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A410E29-4DBB-785B-E394-C6D92CDF6657" referredColumn="A3305070-1E12-B936-B088-3EEDD0F0AA96"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07BF4815-543B-F72C-1005-426CDEA44B85" name="F15B7_Task_Rfe_PK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>D94DD3FF-1D2C-C42E-4D58-FC252242D7A8</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EE3B2A9-2252-DEB7-E009-3CF62E2BCCBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6C7302F-2B0D-E142-5F41-F25AFE3E7707" name="F15B7_Task_Rfe_F15B7_Tasks_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>157F486A-ADDF-095A-00BA-2ABEE4506C7E</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCB6EC86-3D90-3DCF-615A-ABBA7470D2DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="249E0DCE-5B17-B93F-3667-D3C77ADF3C5B" name="F15B7_Task_Rfe_F15B7_RFE_FK">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-21 22:22:46 UTC</createdTime>
+<generatorID>62B08077-955A-D471-C96F-97471FA3DD48</generatorID>
+<ownerDesignName>F15B7Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04919D19-91FB-C444-F986-9ADC75689CF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

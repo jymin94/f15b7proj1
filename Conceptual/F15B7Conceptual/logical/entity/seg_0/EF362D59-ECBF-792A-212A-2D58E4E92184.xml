@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF362D59-ECBF-792A-212A-2D58E4E92184" name="F15B7_RFE">
+<createdBy>XPS 720</createdBy>
+<createdTime>2015-11-19 05:19:48 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="F4C28EAF-ACD9-D831-8550-2DD745631594">
+<createdBy>XPS 720</createdBy>
+<createdTime>2015-11-19 05:20:02 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="49D9CFDF-5309-1DA4-8B52-B5CC4722D2F2">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 04:10:22 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_protect" id="21843ADA-4EF6-2C80-3112-61432DD52388">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 04:14:28 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approve_date" id="17BA99BB-1E9D-D8E2-E0CA-C22599BAAAB1">
+<createdBy>jiyoungmin</createdBy>
+<createdTime>2015-11-20 04:14:53 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="655C5EBB-66E0-A1C9-34ED-29A59210CEAD">
+<createdBy>XPS 720</createdBy>
+<createdTime>2015-11-19 05:35:23 UTC</createdTime>
+<generatorID>CD4BCCF5-9A98-E499-F03E-10BCD263B820</generatorID>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<referedAttribute>72BF6AD1-AB72-7FA3-7BE1-487FD6B1A7BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="7D07E853-1E88-D816-72D4-6C5FC9651575">
+<createdBy>XPS 720</createdBy>
+<createdTime>2015-11-19 05:36:33 UTC</createdTime>
+<generatorID>DF924FD3-3A91-CFA3-A6B3-F7EE7904166B</generatorID>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<referedAttribute>690C080C-CDD3-1E08-52EB-E56113FE104C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_id" id="B4B0DAF5-1270-9FAC-084A-ED99C928C47B">
+<createdBy>Slave</createdBy>
+<createdTime>2015-11-19 22:31:22 UTC</createdTime>
+<generatorID>E810670B-7B94-CD86-1EC3-1C44943B334F</generatorID>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<referedAttribute>7B7477A8-BC29-4DCB-8E52-D8A0C6DD3D94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8790CDF9-EF1E-B41B-2795-D1B032F439C6" name="F15B7_RFE PK">
+<createdBy>XPS 720</createdBy>
+<createdTime>2015-11-19 05:20:30 UTC</createdTime>
+<ownerDesignName>F15B7Conceptual</ownerDesignName>
+<engineerTo>
+<item key="C238E105-1538-C4F4-B94C-4519E20E6A4A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4C28EAF-ACD9-D831-8550-2DD745631594</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
