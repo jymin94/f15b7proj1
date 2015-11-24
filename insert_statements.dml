@@ -1,0 +1,164 @@
+truncate table F15B7_APPROVERS;
+truncate table F15B7_AUTH;
+truncate table F15B7_COMMENT;
+truncate table F15B7_CONTACTS;
+truncate table F15B7_DOC;
+truncate table F15B7_EMP;
+truncate table F15B7_HIST;
+truncate table F15B7_LAB;
+truncate table F15B7_RFE;
+truncate table F15B7_STATUS;
+truncate table F15B7_TASKS;
+truncate table F15B7_TASK_RFE;
+
+alter trigger F15B7_Approvers_PK_trig disable;
+alter trigger F15B7_Contacts_PK_trig disable;
+alter trigger F15B7_Task_Rfe_PK_trig disable;
+alter trigger F15B7_Tasks_PK_trig disable;
+alter trigger F15B7_Comment_PK_trig disable;
+alter trigger F15B7_Doc_PK_trig disable;
+alter trigger F15B7_Hist_PK_trig disable;
+alter trigger F15B7_Status_PK_trig disable;
+alter trigger F15B7_Auth_PK_trig disable;
+alter trigger F15B7_Lab_PK_trig disable;
+alter trigger F15B7_Emp_PK_trig disable;
+alter trigger F15B7_RFE_PK_trig disable;
+
+INSERT INTO F15B7_AUTH(AUTH_ID, RIGHT) VALUES (0, 'None');
+INSERT INTO F15B7_AUTH(AUTH_ID, RIGHT) VALUES (1, 'Edit');
+INSERT INTO F15B7_AUTH(AUTH_ID, RIGHT) VALUES (2, 'View');
+
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(1, 'Entered', 'The RFE has been created but has not yet been submitted for approval.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(2, 'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(3, 'Returned', 'The RFE has been returned for further information or clarification.  Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(4, 'Recalled', 'The requestor has recalled an RFE that has not yet reached final approval.  Once Submitted again, it will follow the same routing as an Entered RFE.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(5, 'Rejected', 'The RFE has been rejected and cannot be implemented.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(6, 'SA Approved', 'The Lab System Administrator has approved the RFE; it has been submitted for Lab Director approval.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(7, 'LD Approved', 'The Lab Director has approved the RFE; it has been submitted for Chairperson approval.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(8, 'CH Approved', 'The Chairperson has approved the RFE; it has been submitted for Executive Director approval.');
+INSERT INTO F15B7_STATUS(STATUS_ID, CODE, DESCRIPTION) VALUES(9, 'Final Approved', 'The Executive Director has given final approval for the RFE and it may be implemented.');
+
+INSERT INTO F15B7_LAB(LAB_ID, LAB_NAME) VALUES (0, 'Pineapple Lab');
+INSERT INTO F15B7_LAB(LAB_ID, LAB_NAME) VALUES (1, 'Admin Lab');
+
+INSERT INTO F15B7_EMP
+	(EMP_ID, 
+	EMP_NAME,
+	EMAIL, 
+	OFFICE_NO, 
+	PHONE, 
+	EMP_STATUS, 
+	STATUS_EFF_DATE, 
+	PRIM_TYPE, 
+	F15B7_LAB_LAB_ID, 
+	F15B7_AUTH_AUTH_ID)
+	 
+	VALUES(0,
+	'Tyler Pineapple',
+	'dog@woof.com',
+	10,
+	111-234-1010,
+	'A',
+	SYSDATE,
+	'Employee',
+	0,
+	0);
+INSERT INTO F15B7_EMP
+	(EMP_ID, 
+	EMP_NAME,
+	EMAIL, 
+	OFFICE_NO, 
+	PHONE, 
+	EMP_STATUS, 
+	STATUS_EFF_DATE, 
+	PRIM_TYPE, 
+	F15B7_LAB_LAB_ID, 
+	F15B7_AUTH_AUTH_ID
+	) 
+	VALUES(1,
+	'Bob SysAdm',
+	'bob@systems.com',
+	15,
+	123-432-1234,
+	'A',
+	SYSDATE,
+	'SysAdmin',
+	0,
+	1);
+INSERT INTO F15B7_EMP
+	(EMP_ID,
+	EMP_NAME,
+	EMAIL, 
+	OFFICE_NO, 
+	PHONE, 
+	EMP_STATUS, 
+	STATUS_EFF_DATE, 
+	PRIM_TYPE, 
+	F15B7_LAB_LAB_ID, 
+	F15B7_AUTH_AUTH_ID
+	) 
+	VALUES(2,
+	'John LabDir',
+	'john@lab.com',
+	20,
+	984-555-1010,
+	'A',
+	SYSDATE,
+	'LabDirector',
+	0,
+	1);
+INSERT INTO F15B7_EMP
+	(EMP_ID, 
+	EMP_NAME,
+	EMAIL, 
+	OFFICE_NO, 
+	PHONE, 
+	EMP_STATUS, 
+	STATUS_EFF_DATE, 
+	PRIM_TYPE, 
+	F15B7_LAB_LAB_ID, 
+	F15B7_AUTH_AUTH_ID) 
+	VALUES(3,
+	'Jimmy Seat',
+	'jimmy@seat.com',
+	30,
+	3232-444-1777,
+	'A',
+	SYSDATE,
+	'Chair',
+	1,
+	1);
+INSERT INTO F15B7_EMP
+	(EMP_ID, 
+	EMP_NAME,
+	EMAIL, 
+	OFFICE_NO, 
+	PHONE, 
+	EMP_STATUS, 
+	STATUS_EFF_DATE, 
+	PRIM_TYPE, 
+	F15B7_LAB_LAB_ID, 
+	F15B7_AUTH_AUTH_ID) 
+	VALUES(4,
+	'Ron ExDi',
+	'ron@exec.com',
+	77,
+	666-666-8743,
+	'A',
+	SYSDATE,
+	'ExecDir',
+	1,
+	1);
+
+alter trigger F15B7_Approvers_PK_trig enable;
+alter trigger F15B7_Contacts_PK_trig enable;
+alter trigger F15B7_Task_Rfe_PK_trig enable;
+alter trigger F15B7_Tasks_PK_trig enable;
+alter trigger F15B7_Comment_PK_trig enable;
+alter trigger F15B7_Doc_PK_trig enable;
+alter trigger F15B7_Hist_PK_trig enable;
+alter trigger F15B7_Status_PK_trig enable;
+alter trigger F15B7_Auth_PK_trig enable;
+alter trigger F15B7_Lab_PK_trig enable;
+alter trigger F15B7_Emp_PK_trig enable;
+alter trigger F15B7_RFE_PK_trig enable;

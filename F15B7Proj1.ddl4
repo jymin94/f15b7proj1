@@ -1,0 +1,287 @@
+drop view F15B7_emp_view;
+drop view F15B7_exdir_view;
+drop view F15B7_chair_view;
+drop view F15B7_labdir_view;
+drop view F15B7_sysadmin_view;
+ 
+create view F15B7_emp_view as
+SELECT 
+    emp_id,
+	emp_name,
+    email,
+    office_no,
+    phone,
+    emp_status,
+    status_eff_date,
+    prim_type,
+    F15B7_Lab_lab_id,
+    F15B7_Auth_auth_id
+FROM F15B7_Emp where prim_type = 'Employee';
+
+create or replace TRIGGER F15B7_emp_trigger
+     INSTEAD OF insert ON F15B7_emp_view
+     FOR EACH ROW
+BEGIN
+    insert into F15B7_Emp( 
+		emp_id,
+		emp_name,
+		email,
+		office_no,
+		phone,
+		emp_status,
+		status_eff_date,
+		prim_type,
+		F15B7_Lab_lab_id,
+		F15B7_Auth_auth_id
+		)
+		 VALUES ( 
+		:NEW.emp_id,
+		:NEW.emp_name,
+		:NEW.email,
+		:NEW.office_no,
+		:NEW.phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		'Employee',
+		:NEW.F15B7_Lab_lab_id,
+		:NEW.F15B7_Auth_auth_id
+		);
+END;
+/
+  
+create view F15B7_exdir_view as
+SELECT 
+    emp_id,
+	emp_name,
+    email,
+    office_no,
+    phone,
+    emp_status,
+    status_eff_date,
+    prim_type,
+    F15B7_Lab_lab_id,
+    F15B7_Auth_auth_id
+FROM F15B7_Emp where prim_type = 'ExecDir';
+
+create or replace TRIGGER F15B7_exdir_trigger
+     INSTEAD OF insert ON F15B7_exdir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15B7_Emp( 
+		emp_id,
+		emp_name,
+		email,
+		office_no,
+		phone,
+		emp_status,
+		status_eff_date,
+		prim_type,
+		F15B7_Lab_lab_id,
+		F15B7_Auth_auth_id
+		)
+		 VALUES ( 
+		:NEW.emp_id,
+		:NEW.emp_name,
+		:NEW.email,
+		:NEW.office_no,
+		:NEW.phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		'ExecDir',
+		:NEW.F15B7_Lab_lab_id,
+		:NEW.F15B7_Auth_auth_id
+		);
+END;
+/
+
+create view F15B7_chair_view as
+SELECT 
+    emp_id,
+	emp_name,
+    email,
+    office_no,
+    phone,
+    emp_status,
+    status_eff_date,
+    prim_type,
+    F15B7_Lab_lab_id,
+    F15B7_Auth_auth_id
+FROM F15B7_Emp where prim_type = 'Chair';
+
+create or replace TRIGGER F15B7_chair_trigger
+     INSTEAD OF insert ON F15B7_chair_view
+     FOR EACH ROW
+BEGIN
+    insert into F15B7_Emp( 
+		emp_id,
+		emp_name,
+		email,
+		office_no,
+		phone,
+		emp_status,
+		status_eff_date,
+		prim_type,
+		F15B7_Lab_lab_id,
+		F15B7_Auth_auth_id
+		)
+		 VALUES ( 
+		:NEW.emp_id,
+		:NEW.emp_name,
+		:NEW.email,
+		:NEW.office_no,
+		:NEW.phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		'Chair',
+		:NEW.F15B7_Lab_lab_id,
+		:NEW.F15B7_Auth_auth_id
+		);
+END;
+/
+
+create view F15B7_labdir_view as
+SELECT 
+    emp_id,
+	emp_name,
+    email,
+    office_no,
+    phone,
+    emp_status,
+    status_eff_date,
+    prim_type,
+    F15B7_Lab_lab_id,
+    F15B7_Auth_auth_id
+FROM F15B7_Emp where prim_type = 'LabDirector';
+
+create or replace TRIGGER F15B7_labdir_trigger
+     INSTEAD OF insert ON F15B7_labdir_view
+     FOR EACH ROW
+BEGIN
+    insert into F15B7_Emp( 
+		emp_id,
+		emp_name,
+		email,
+		office_no,
+		phone,
+		emp_status,
+		status_eff_date,
+		prim_type,
+		F15B7_Lab_lab_id,
+		F15B7_Auth_auth_id
+		)
+		 VALUES ( 
+		:NEW.emp_id,
+		:NEW.emp_name,
+		:NEW.email,
+		:NEW.office_no,
+		:NEW.phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		'LabDirector',
+		:NEW.F15B7_Lab_lab_id,
+		:NEW.F15B7_Auth_auth_id
+		);
+END;
+/
+
+create view F15B7_sysadmin_view as
+SELECT 
+    emp_id,
+	emp_name,
+    email,
+    office_no,
+    phone,
+    emp_status,
+    status_eff_date,
+    prim_type,
+    F15B7_Lab_lab_id,
+    F15B7_Auth_auth_id
+FROM F15B7_Emp where prim_type = 'SysAdmin';
+
+create or replace TRIGGER F15B7_sysadmin_trigger
+     INSTEAD OF insert ON F15B7_sysadmin_view
+     FOR EACH ROW
+BEGIN
+    insert into F15B7_Emp( 
+		emp_id,
+		emp_name,
+		email,
+		office_no,
+		phone,
+		emp_status,
+		status_eff_date,
+		prim_type,
+		F15B7_Lab_lab_id,
+		F15B7_Auth_auth_id
+		)
+		 VALUES ( 
+		:NEW.emp_id,
+		:NEW.emp_name,
+		:NEW.email,
+		:NEW.office_no,
+		:NEW.phone,
+		:NEW.emp_status,
+		:NEW.status_eff_date,
+		'SysAdmin',
+		:NEW.F15B7_Lab_lab_id,
+		:NEW.F15B7_Auth_auth_id
+		);
+END;
+/
+
+create or replace TRIGGER F15B7_rfe_create_trigger
+     BEFORE INSERT 
+     on F15B7_RFE
+     FOR EACH ROW
+BEGIN
+    :NEW.F15B7_Status_Status_id := 1;
+    :NEW.eff_date := SYSDATE;
+END;
+/
+
+create or replace TRIGGER F15B7_rfe_hist_cr_trigger
+     AFTER INSERT 
+     on F15B7_RFE
+     FOR EACH ROW
+BEGIN    
+    INSERT INTO F15B7_HIST (hist_id, F15B7_RFE_rfe_id, status_code, eff_date) VALUES
+    ((SELECT COUNT(hist_id) from F15B7_HIST) + 1, :NEW.RFE_ID, 1, SYSDATE);
+END;
+/
+
+create or replace TRIGGER F15B7_rfe_hist_upd_trigger
+     AFTER UPDATE 
+     on F15B7_RFE
+     FOR EACH ROW
+BEGIN    
+    IF (:NEW.F15B7_STATUS_STATUS_ID = 3) THEN
+        INSERT INTO F15B7_COMMENT  (comment_id, entry_date, comm, F15B7_RFE_RFE_ID) VALUES
+        ((SELECT COUNT(comment_id) FROM F15B7_COMMENT) + 1, SYSDATE, 'Returned', :NEW.RFE_ID);
+    ELSIF (:NEW.F15B7_STATUS_STATUS_ID = 5) THEN     
+        INSERT INTO F15B7_COMMENT  (comment_id, entry_date, comm, F15B7_RFE_RFE_ID) VALUES
+        ((SELECT COUNT(comment_id) FROM F15B7_COMMENT) + 1, SYSDATE, 'Rejected', :NEW.RFE_ID);
+    END IF;
+        
+    INSERT INTO F15B7_HIST (hist_id, F15B7_RFE_rfe_id, status_code, eff_date) VALUES
+    ((SELECT COUNT(hist_id) from F15B7_HIST) + 1, :NEW.RFE_ID, :NEW.F15B7_STATUS_STATUS_ID, SYSDATE);
+END;
+/
+
+create or replace TRIGGER F15B7_emp_create_trigger
+     BEFORE INSERT 
+     on F15B7_EMP
+     FOR EACH ROW
+DECLARE
+    edit_id_param NUMBER;
+    none_id_param NUMBER;
+BEGIN
+    SELECT auth_id into edit_id_param from F15B7_Auth WHERE right = 'Edit';
+    SELECT auth_id into none_id_param from F15B7_Auth WHERE right = 'None';
+    IF (:NEW.prim_type != 'Employee') THEN
+        :NEW.F15B7_Auth_auth_id := edit_id_param; 
+    ELSE 
+        :NEW.F15B7_Auth_auth_id := none_id_param; 
+    END IF;
+END;
+/
+
